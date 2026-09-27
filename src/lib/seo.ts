@@ -5,7 +5,7 @@ const vercelHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
 export const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (vercelHost ? `https://${vercelHost}` : "http://localhost:3000")
+  (vercelHost ? `https://${vercelHost}` : "https://physioghar-fawn.vercel.app/")
 ).replace(/\/$/, "");
 
 export const absoluteUrl = (path = "/") => `${siteUrl}${path === "/" ? "" : path}`;
